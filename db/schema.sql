@@ -6,6 +6,6 @@ CREATE TABLE burgers (
     id INT(11) NOT NULL AUTO_INCREMENT,
     burger_name VARCHAR(255) NOT NULL,
     devoured BOOLEAN DEFAULT false,
-    creation_time DATETIME DEFAULT CURRENT_TIMESTAMP,
+    -- creation_time DATETIME DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (id)
 );
