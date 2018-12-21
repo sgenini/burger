@@ -1,7 +1,14 @@
-<li class="card text-center card-list" style="background-color:#faebd7">
-	{{burger_name}}
+{{#if devoured}}
+	<li class="card text-center card-list" style="background-color:#faebd7">
+		{{burger_name}}
 
-	<button class="change-devoured btn btn-info btn-custom mx-auto mt-2" style="width: 50%" data-id="{{id}}" data-newdevoured="{{devoured}}">
-		{{#if devoured}}DEVOUR!{{else}}ORDER ANOTHER!{{/if}}
-	</button>
-</li>
+		<button class="change-devoured btn btn-info btn-custom mx-auto mt-2" style="width: 50%" data-id="{{id}}" data-newdevoured="{{devoured}}">
+			DEVOUR!
+		</button>
+	</li>
+	{{else}}
+	<li class="card text-center card-list" style="background-color: #e3f3f7">
+		{{burger_name}}
+	</li>
+{{/if}}
+
