@@ -1,8 +1,33 @@
-li {
-  padding: 5px;
-  margin: 5px;
-  background: #faebd7;
+html { 
+  background: url(./hamburger.jpg) no-repeat center center fixed; 
+  background-size: cover;
 }
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding: 10px;
+  margin: 10px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 10px
+}
+
+.jumbotron {
+  background: url(./bob.png); 
+  background-size: 50%;
+  /* background-position-y: -470px; */
+  /* background-position-x: -1000px; */
+  background-position: left;
+}
+
+.card-default {
+  background-color: whitesmoke;
+}
+
 
 .label {
   font-weight: bold;
@@ -16,4 +41,10 @@ li {
 
 .form-group {
   margin-bottom: 5px;
+}
+
+.drop-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  opacity: .95;
+  margin-top: 20px;
 }
